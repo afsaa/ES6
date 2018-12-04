@@ -1,0 +1,30 @@
+{
+  "name": "ES6",
+  "version": "1.0.0",
+  "description": "Notes from the ES6(Ecmascript 6) learning.",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "babel-core": "^6.26.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "translate": "npx babel src --watch --out-dir output"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afsaa/ES6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afsaa/ES6/issues"
+  },
+  "homepage": "https://github.com/afsaa/ES6#readme"
+}
