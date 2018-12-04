@@ -1,2 +1,2 @@
 # ES6
-Notes from the ES6(Ecmascript 6) learning.
+Learning how to use Babel and ES6.
