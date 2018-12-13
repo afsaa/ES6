@@ -1,47 +1,58 @@
-// Classes and inheritance are amply used on current frameworks. 
-class User {
-    constructor(name, age, email) {
-        this.name = name;
-        this.age = age;
-        this.email = email;
-    }
+// Classes and inheritance are amply used on current frameworks.
+export default class User {
+  //Exporting by default can only be used to export 1 thing. Often is used to export classes.
+  constructor(name, age, email) {
+    this.name = name;
+    this.age = age;
+    this.email = email;
+  }
 
-    showGreeting(greeting){
-        console.log(greeting);
-    }
+  showGreeting(greeting) {
+    console.log(greeting);
+  }
 
-    showInfo(){
-        return `
+  showInfo() {
+    return `
             <b>Name:</b>  ${this.name}<br />
             <b>Age:</b>  ${this.age}<br />
             <b>Email:</b>  ${this.email}<br />
             <hr />
-        `
-    }
+        `;
+  }
 }
 
+/*
 class Student extends User {
-    constructor(name, age, email, career) {
-        super(name, age, email);
-        this.career = career;
-    }
-
-    showInfo() {
-        return `
+  constructor(name, age, email, career) {
+    super(name, age, email);
+    this.career = career;
+  }
+  
+  showInfo() {
+    return `
             <b>Name:</b>  ${this.name}<br />
             <b>Age:</b>  ${this.age}<br />
             <b>Email:</b>  ${this.email}<br />
             <b>Career:</b>  ${this.career}<br />
             <hr />
-        `
-    }
+        `;
+  }
 }
-
-const luis = new User('Luis Alberto Gomez', 20, 'luis@correo.com');
+const luis = new User("Luis Alberto Gomez", 20, "luis@correo.com");
 document.write(luis.showInfo());
 
-const andres = new Student('Andres Fernando Saa', 24, 'andressaa.dev@gmail.com', 'Systems Engineering and Computing');
+const andres = new Student(
+  "Andres Fernando Saa",
+  24,
+  "andressaa.dev@gmail.com",
+  "Systems Engineering and Computing"
+);
 document.write(andres.showInfo());
 
-const stiven = new Student('Stiven Lopez', 27, 'stivemaster@correo.com', 'Chemical Engineering');
-document.write(stiven.showInfo());
+const stiven = new Student(
+  "Stiven Lopez",
+  27,
+  "stivemaster@correo.com",
+  "Chemical Engineering"
+);
+document.write(stiven.showInfo());*/
